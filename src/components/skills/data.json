@@ -1,0 +1,68 @@
+{
+  "frams": [
+    {
+      "name": "vue",
+      "link": "https://vuejs.org/"
+    },
+    {
+      "name": "react",
+      "link": "https://reactjs.org/"
+    },
+    {
+      "name": "angular",
+      "link": "https://angular.io/"
+    },
+    {
+      "name": "node",
+      "link": "https://nodejs.org/"
+    },
+    {
+      "name": "laravel",
+      "link": "https://laravel.com/"
+    },
+    {
+      "name": "flutter",
+      "link": "https://flutter.dev/"
+    },
+    {
+      "name": "Sass",
+      "link": "https://sass-lang.com/"
+    },
+    {
+      "name": "wordpress",
+      "link": "https://wordpress.org/"
+    },
+    {
+      "name": "stylus",
+      "link": "https://stylus-lang.com/"
+    },
+    {
+      "name": "php",
+      "link": "https://www.php.net/"
+    },
+    {
+      "name": "mysql",
+      "link": "https://www.mysql.com/"
+    },
+    {
+      "name": "sql",
+      "link": "https://en.wikipedia.org/wiki/SQL"
+    },
+    {
+      "name": "github",
+      "link": "https://github.com/"
+    },
+    {
+      "name": "jquery",
+      "link": "https://jquery.com/"
+    },
+    {
+      "name": "docker",
+      "link": "https://www.docker.com/"
+    },
+    {
+      "name": "bootstrap",
+      "link": "https://getbootstrap.com/"
+    }
+  ]
+}

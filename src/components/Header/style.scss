@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    &-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    &-name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #343a40;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .nav {
+        &-list {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            font-size: 14px;
+        }
+    
+        a {
+        text-decoration: none;
+        color: #343a40;
+        font-size: 16px;
+        font-weight: 600;
+    
+        &:hover {
+            color: #007bff;
+        }
+        }
+    }
+}

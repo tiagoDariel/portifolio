@@ -1,0 +1,49 @@
+.experience {
+  &__content {
+    display: flex;
+    gap: 30px;
+
+    .info {
+      font-size: 12px;
+      color: var(--color-text);
+      width: 250px;
+
+      &-function {
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--color-title);
+        margin-bottom: 4px;
+      }
+    }
+
+    &-history {
+      position: relative;
+      width: 600px;
+      padding-bottom: 15px;
+      font-size: 12px;
+      color: var(--color-text);
+      text-align: justify;
+
+      &:after {
+        content: '';
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        background-color: var(--color-text);
+        position: absolute;
+        left: -20px;
+        top: 2px;
+      }
+
+      &:before {
+        content: '';
+        height: 100%;
+        width: 2px;
+        background-color: var(--color-text);
+        position: absolute;
+        left: -15.8px;
+        top: 7px;
+      }
+    }
+  }
+}
