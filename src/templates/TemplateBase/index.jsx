@@ -13,7 +13,7 @@ const TemplateBase = ({ children, showLang }) => {
     const item = langNormalized === 'inglês' ? en : langNormalized === 'espanhol' ? es : pt
 
     showLang(item);
-  }, []);
+  }, [showLang]);
 
   useEffect(() => {
     const lang = localStorage.getItem('lang') || 'Inglês';
