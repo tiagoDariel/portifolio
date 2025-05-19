@@ -15,14 +15,14 @@
             gap: 20px;
             text-align: center;
             font-size: 1.2rem;
-            color: var(--color-primary);
             text-transform: capitalize;
-            border: 2px solid #ccc;
+            border: 2px solid var(--color-border);
             width: 90px;
             padding: 12px 4px 8px;
             height: 100px;
             border-radius: 5px;
             cursor: pointer;
+            background-color: var(--background-card);
 
             &:hover {
                 box-shadow: 1px 8px 10px 5px rgba(0, 0, 0, .1);

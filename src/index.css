@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-secundary);
+  color: var(--color-text);
 }
 
 code {
@@ -22,15 +24,4 @@ code {
 .content {
   width: 1000px;
   padding: 50px;
-}
-
-:root {
-  --color-primary: #00793c;
-  --color-primary-hover: #034d28;
-  --color-primary-light: #e6f4ea; 
-  --color-secondary: #1c1c1e;
-  --color-background: #f5f5f7;
-  --color-text: #676363;
-  --color-border: #e1e4e8;
-  --color-title: #2b2b2b;
 }

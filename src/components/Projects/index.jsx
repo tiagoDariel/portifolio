@@ -1,110 +1,75 @@
 import './style.scss';
 import { FaArrowRightLong } from "react-icons/fa6";
-import { FaGithub  } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { useState } from 'react';
 import { img } from '../../utils/images';
 
-
-
-
-
-const Projects = () => {
-  const [activeSpoilerViewOne, activeSpoilerViewPrjectOne] = useState('')
-  const [activeSpoilerViewTwo, activeSpoilerViewPrjectTwo] = useState('')
-  
+const Projects = ({ data }) => {
+  const [activeSpoilerIndex, setActiveSpoilerIndex] = useState(null);
 
   return (
-    <div className="project">
+    <div className="project background-primary">
       <div className="project__content content">
-        <h2>Projects</h2>
-        <p>Here are some of my projects:</p>
+        <h2>{data.title}</h2>
+        <p>{data.subtitle}</p>
+
         <div className="project__content-list">
-          <div className="project__content-list-item first">
-            <img src={img.jk} alt="jk solar system" width={100}/>
-            <h3>JK Solar System</h3>
-            <p>Project created in WordPress</p>
-            <a
-              href="https://jksolarsystem.com.br/"
-              className='view-project'
-              target="_blank"
-              rel="noopener noreferrer">
-                View Project <FaArrowRightLong />
-            </a>
+         
+          {data.items.map((item, i) => (
+            <div key={i} className={`project__content-list-item ${!i ? 'first' : ''}`}>
+              {
+                item.logo ? <img src={img[item.logo]} alt="jk solar system" width={100} /> : <></>
+              }
+              <h3>{item.title}</h3>
 
-          </div>
-          <div className="project__content-list-item">
-            <h3>course project form</h3>
-            <div className="languages">
-              <img src={img.languages} alt="html" width={100} />
-              <dio className="languages-percent">
-                <span>38%</span>
-                <span>19%</span>
-                <span>43%</span>
-              </dio>
-            </div>
-            <div className='description'>Project to develop form skills</div>
+              {item.percents.length > 0 && (
+                <div className="languages">
+                  <img src={img.languages} alt="html" width={100} />
+                  <div className="languages-percent">
+                    {item.percents.map((percents, idx) => (
+                      <span key={idx}>{percents}%</span>
+                    ))}
+                  </div>
+                </div>
+              )}
 
-            <div className="view-project-options">
-              <a
-                href="https://tiago-dariel-dnc.netlify.app/"
-                className='view-project'
-                target="_blank"
-                onMouseEnter={() => activeSpoilerViewPrjectOne('spoiler-active')}
-                onMouseLeave={() => activeSpoilerViewPrjectOne('')}
-                rel="noopener noreferrer">
-                View Project <FaArrowRightLong />
-              </a>
-              <a
-                href="https://github.com/tiagoDariel/RID218815_Desafio01"
-                className='view-project-github'
-                target="_blank"
-                rel="noopener noreferrer">
-                  Project GitHub <FaGithub />
-              </a>
-            </div>
-            <div className={`view-spoiler ${activeSpoilerViewOne}`}>
-              <img src={img.projeto1} alt="Project 1" width="100%"/>
-            </div>
-          </div>
+              <div className='description'>{item.subtitle}</div>
 
-          <div className="project__content-list-item">
-            <h3>course project responsive</h3>
-            <div className="languages">
-              <img src={img.languages} alt="html" width={100} />
-              <dio className="languages-percent">
-                <span>15%</span>
-                <span>47%</span>
-                <span>38%</span>
-              </dio>
-            </div>
+              <div className="view-project-options">
+                <a
+                  href={item.link}
+                  className='view-project'
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onMouseEnter={() => setActiveSpoilerIndex(i)}
+                  onMouseLeave={() => setActiveSpoilerIndex(null)}
+                >
+                  View Project <FaArrowRightLong />
+                </a>
 
-            <div className='description'>Project to develop responsive skills</div>
-
-            <div className="view-project-options">
-              <a
-                href="https://tiago-dariel-desafio2.netlify.app/"
-                className='view-project'
-                target="_blank"
-                onMouseEnter={() => activeSpoilerViewPrjectTwo('spoiler-active')}
-                onMouseLeave={() => activeSpoilerViewPrjectTwo('')}
-                rel="noopener noreferrer">
-                View Project <FaArrowRightLong />
-              </a>
-              <a
-                href="https://github.com/tiagoDariel/RID218815_Desafio02"
-                className='view-project-github'
-                target="_blank"
-                rel="noopener noreferrer">
-                  Project GitHub <FaGithub />
-              </a>
+                {item.gitHub && (
+                  <a
+                    href={item.gitHub}
+                    className='view-project-github'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Project GitHub <FaGithub />
+                  </a>
+                )}
+              </div>
+              {item.image ?
+                <div className={`view-spoiler ${activeSpoilerIndex === i ? 'spoiler-active' : ''}`}>
+                  <img src={img[item.image]} alt="Project" style={{ width: '100%' }} />
+                </div> : <></>
+              }
             </div>
-            <div className={`view-spoiler ${activeSpoilerViewTwo}`}>
-              <img src={img.projeto2} alt="Project 2" width="100%"/>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
+      <div id="experience"></div>
     </div>
   );
-}
+};
+
 export default Projects;

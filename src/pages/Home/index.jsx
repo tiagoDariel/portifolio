@@ -1,18 +1,28 @@
-import { Presentation, Skills, Projects, Experience } from "../../components";
+import { Presentation, Skills, Projects, Experience, About } from "../../components";
 import { TemplateBase } from "../../templates";
+import { useState } from "react";
 
 const Home = () => {
-	return (
-		<>
-			<TemplateBase>
-				<Presentation />
-				<Skills />
-				<Projects />
-				<Experience />
-				{/* <Contact /> */}
-			</TemplateBase>
-		</>
-	);
-}
+	const [data, setData] = useState(null);
 
-export default Home();
+	const getLang = (data) => {
+		setData(data);
+	};
+
+	return (
+		<TemplateBase showLang={getLang}>
+			{data ?
+			<>
+				<Presentation data={data.presentation} />
+				<About  data={data.about}/>
+				<Projects data={data.projects}/>
+				<Experience data={data.experience} />
+				<Skills data={data.skills}/>
+				{/* <Contact /> */}
+			</>
+			: <></>	}
+		</TemplateBase>
+	);
+};
+
+export default Home;

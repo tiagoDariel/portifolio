@@ -10,7 +10,7 @@ const Footer = () => {
           <ul className="social-links">
             <li className="social-link">
               <a href="https://www.linkedin.com/in/tiago-dariel-a7904a144/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin /> <spam>LinkedIn</spam>
+                <FaLinkedin /> <span>LinkedIn</span>
               </a>
             </li>
             

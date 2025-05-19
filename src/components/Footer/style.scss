@@ -1,9 +1,9 @@
 .footer {
-    background-color: #f8f9fa;
+    background-color: var(--background-default);
     padding: 20px;
     text-align: center;
     font-size: 14px;
-    color: #343a40;
+    color: var(--color-text);
     z-index: 1;
 
     &__content {
@@ -17,7 +17,7 @@
 
             a {
                 text-decoration: none;
-                color: #343a40;
+                color: var(--color-secondary);
                 font-size: 16px;
                 display: flex;
                 align-items: center;

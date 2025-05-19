@@ -1,0 +1,160 @@
+{
+    "header": {
+        "menu": [
+            {
+                "text": "Home",
+                "link": "/"
+            },
+            {
+                "text": "About",
+                "link": "/"
+            },
+            {
+                "text": "Contact",
+                "link": "/"
+            }
+        ]
+    },
+    "presentation": {
+        "title": "Hello, I'm Tiago Dariel",
+        "subtitle": "Full-stack develop specialing in back-end and front-end sytems"
+    },
+    "about": {
+        "title": "About me",
+        "description": "I’m a front-end developer with over 4 years of experience, mainly working with Vue.js, React, and frameworks like Bootstrap, Material UI, and Element Plus. I spent 3 years at Facilita, where I helped build and maintain web systems using Laravel and Blade. Currently, I’m working at Cilia, developing modern interfaces and reusable components with Vue.js. I have a growing interest in back-end development, especially with Node.js and Laravel, aiming to become a full-stack developer. I hold a degree in Systems Analysis and Development from UniFanap, have completed a postgraduate course in Project Management, and I’m currently studying Software Engineering at Instituto DNC to further strengthen my technical expertise."
+    },
+    "projects": {
+        "title": "Projects",
+        "subtitle": "Here are some of my projects:",
+        "items": [
+            {
+                "logo": "jk",
+                "title": "JK Solar System",
+                "subtitle": "Project created in WordPress",
+                "link": "https://jksolarsystem.com.br/",
+                "gitHub": null,
+                "image": null,
+                "percents": []
+            },
+            {
+                "logo": "",
+                "title": "Course Project Form",
+                "subtitle": "Project to develop form-related skills",
+                "link": "https://tiago-dariel-dnc.netlify.app/",
+                "gitHub": "https://github.com/tiagoDariel/RID218815_Desafio01",
+                "image": "projeto1",
+                "percents": [
+                    38,
+                    19,
+                    43
+                ]
+            },
+            {
+                "logo": "",
+                "title": "Course Project Form",
+                "subtitle": "Project to develop form-related skills",
+                "link": "https://tiago-dariel-desafio2.netlify.app/",
+                "gitHub": "https://github.com/tiagoDariel/RID218815_Desafio02",
+                "image": "projeto2",
+                "percents": [
+                    15,
+                    47,
+                    38
+                ]
+            }
+        ]
+    },
+    "experience": {
+        "title": "Professional experience",
+        "lang": "en",
+        "items": [
+            {
+                "title": "Front-end Developer",
+                "busines": "Cilia Tecnologia - Full-time",
+                "date_start": "2024-04-01",
+                "date_end": null,
+                "period": "Apr 2024 – Present · 1 mo",
+                "location": "Goiânia, Goiás, Brazil · Hybrid",
+                "description": "Building modern, responsive interfaces focused on user experience. Working on projects using Vue.js 3 and libraries such as Bootstrap, jQuery, and Material UI. Transforming Figma prototypes into functional applications, integrating with REST APIs, and collaborating in agile teams. Committed to best development practices, performance, and usability."
+            },
+            {
+                "title": "Front-end Developer",
+                "busines": "App Facilita - Full-time",
+                "date_start": "2021-06-01",
+                "date_end": "2024-04-01",
+                "period": "Jun 2021 – Apr 2024 · 2 yrs 10 mos",
+                "location": "Aparecida de Goiânia, Goiás, Brazil · On-site",
+                "description": "Built modern, responsive interfaces focused on delivering a great user experience. Worked on projects using Vue.js 2 and libraries like Bootstrap and jQuery. Turned Figma prototypes into functional applications, integrated REST APIs, and collaborated in agile teams. Focused on clean code, performance, and usability."
+            }
+        ]
+    },
+     "skills": {
+        "title": "Skills",
+        "items": [
+            {
+                "name": "vue",
+                "link": "https://vuejs.org/"
+            },
+            {
+                "name": "react",
+                "link": "https://reactjs.org/"
+            },
+            {
+                "name": "angular",
+                "link": "https://angular.io/"
+            },
+            {
+                "name": "node",
+                "link": "https://nodejs.org/"
+            },
+            {
+                "name": "laravel",
+                "link": "https://laravel.com/"
+            },
+            {
+                "name": "flutter",
+                "link": "https://flutter.dev/"
+            },
+            {
+                "name": "Sass",
+                "link": "https://sass-lang.com/"
+            },
+            {
+                "name": "wordpress",
+                "link": "https://wordpress.org/"
+            },
+            {
+                "name": "stylus",
+                "link": "https://stylus-lang.com/"
+            },
+            {
+                "name": "php",
+                "link": "https://www.php.net/"
+            },
+            {
+                "name": "mysql",
+                "link": "https://www.mysql.com/"
+            },
+            {
+                "name": "sql",
+                "link": "https://en.wikipedia.org/wiki/SQL"
+            },
+            {
+                "name": "github",
+                "link": "https://github.com/"
+            },
+            {
+                "name": "jquery",
+                "link": "https://jquery.com/"
+            },
+            {
+                "name": "docker",
+                "link": "https://www.docker.com/"
+            },
+            {
+                "name": "bootstrap",
+                "link": "https://getbootstrap.com/"
+            }
+        ]
+    }
+}
