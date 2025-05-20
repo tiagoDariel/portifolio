@@ -1,8 +1,7 @@
-import logo from '../../assets/img/logo.png';
-import nightLight from '../../assets/img/nightLight.png';
-import clound from '../../assets/img/clound.png';
+import { img } from '../../utils/images';
 import './style.scss';
 import { useEffect, useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 const Header = ({ getLang, optionLanguageSelected }) => {
   const [theme, setTheme] = useState()
@@ -36,22 +35,7 @@ const Header = ({ getLang, optionLanguageSelected }) => {
 
   return (
     <header className="header light container">
-      <div className="header-content content">
-        <div className="header-name">
-          <img src={logo} alt="Logo" width={50} />
-          <span className='name'>TIAGO DARIEL</span>
-        </div>
-        <nav className='nav'>
-          <ul className='nav-list'>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#skills">Skills</a></li>
-          </ul>
-        </nav>
-
-        <div className="options">
+      <div className="options">
           <select onChange={e => alterLanguage(e.target.value)}>
             {
               languages.map(lang => (
@@ -59,14 +43,26 @@ const Header = ({ getLang, optionLanguageSelected }) => {
               ))
             }
           </select>
-        </div>
-
-        <div className='night-light' onClick={() => toggleTheme(theme === 'light' ? 'dark' : 'light')}>
+          <div className='night-light' onClick={() => toggleTheme(theme === 'light' ? 'dark' : 'light')}>
             <div className="swap-time">
-              <img src={nightLight} alt="noite" className={theme + ' moon-sun'}/>
-              <img src={clound} alt="noite" className={theme + '-clound clounds'}/>
+              <img src={img.nightLight} alt="noite" className={theme + ' moon-sun'}/>
+              <img src={img.clound} alt="noite" className={theme + '-clound clounds'}/>
             </div>
           </div>
+        </div>
+      <div className="header-content content">
+        <div className="header-name">
+          <img src={img[`logo-${theme}`]} alt="Logo" width={200} />
+        </div>
+        <nav className='nav'>
+          <ul className='nav-list'>
+            <li><HashLink smooth to="#about">About</HashLink></li>
+            <li><HashLink smooth to="#projects">Projects</HashLink></li>
+            <li><HashLink smooth to="#experience">Experience</HashLink></li>
+            <li><HashLink smooth to="#contact">Contact</HashLink></li>
+            <li><HashLink smooth to="#skills">Skills</HashLink></li>
+          </ul>
+        </nav>
       </div>
     </header>
   )

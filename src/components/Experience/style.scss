@@ -4,13 +4,13 @@
     gap: 30px;
 
     .info {
-      font-size: 12px;
+      font-size: 14px;
       color: var(--color-text);
       width: 250px;
 
       &-function {
         font-weight: 600;
-        font-size: 14px;
+        font-size: 15px;
         color: var(--color-title);
         margin-bottom: 4px;
       }
@@ -18,9 +18,9 @@
 
     &-history {
       position: relative;
-      width: 600px;
-      padding-bottom: 15px;
-      font-size: 12px;
+      width: 80%;
+      padding-bottom: 2em;
+      font-size: 15px;
       color: var(--color-text);
       text-align: justify;
 
