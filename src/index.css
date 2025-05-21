@@ -26,3 +26,39 @@ code {
   width: 1000px;
   padding: 50px;
 }
+
+@media (max-width: 1060px) {
+  .content {
+    width: 800px;
+  }
+}
+
+@media (max-width: 870px) {
+  .content {
+    width: 700px;
+  }
+}
+
+@media (max-width: 760px) {
+  .content {
+    width: 600px;
+  }
+}
+
+@media (max-width: 670px) {
+  .content {
+    width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  .content {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .content {
+    width: 300px;
+  }
+}

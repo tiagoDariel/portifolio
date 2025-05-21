@@ -138,3 +138,9 @@
 
   }
 }
+
+@media (max-width: 760px) {
+    .project__content-list {
+        grid-template-columns: auto;
+    }
+}

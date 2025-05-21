@@ -82,6 +82,11 @@
         gap: 20px;
         justify-content: space-between;
         padding: 0px;
+
+        .button-open-side-bar {
+            display: none;
+            cursor: pointer;
+        }
     }
 
     &-name {
@@ -110,6 +115,29 @@
             &:hover {
                 color: #007bff;
             }
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .header {
+        padding: 30px 20px !important; 
+        display: flex;
+
+        &-content {
+            width: 100%;
+        }
+
+        .button-open-side-bar {
+            display: block;
+        }
+
+        .nav {
+            display: none;
+        }
+    
+        .options {
+            display: none;
         }
     }
 }
