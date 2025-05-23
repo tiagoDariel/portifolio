@@ -7,7 +7,7 @@ import { HashLink } from 'react-router-hash-link';
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = ({ getLang, optionLanguageSelected, data }) => {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
   const [show, showSideMenu] = useState(false)
 
   const alterLanguage = (lang) => {
