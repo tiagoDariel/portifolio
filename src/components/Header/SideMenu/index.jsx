@@ -24,9 +24,10 @@ const SideMenu = ({ opened, close, toggleTheme, optionsLanguages, menu }) => {
 
           <select
             onChange={e => optionsLanguages.alterLanguage(e.target.value)}
+            value={optionsLanguages?.optionLanguageSelected?.value}
           >
             {optionsLanguages.languages?.map((lang) => (
-              <option key={lang.value} value={JSON.stringify(lang)} selected={optionsLanguages.optionLanguageSelected === lang}>
+              <option key={lang.value} value={JSON.stringify(lang)}>
                 {lang.label}
               </option>
             ))}

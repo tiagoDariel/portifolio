@@ -68,9 +68,10 @@ const Header = ({ getLang, optionLanguageSelected, data }) => {
       <div className="options">
         <select
           onChange={e => alterLanguage(e.target.value)}
+          value={optionLanguageSelected?.value}
         >
           {data?.languages?.map((lang) => (
-            <option key={lang.value} value={JSON.stringify(lang)} selected={optionLanguageSelected === lang}>
+            <option key={lang.value} value={lang.value}>
               {lang.label}
             </option>
           ))}

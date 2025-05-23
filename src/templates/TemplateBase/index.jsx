@@ -9,11 +9,11 @@ const TemplateBase = ({ children, showLang }) => {
   const [data, setData] = useState({})
 
   const getLang = useCallback((lang) => {
-    const language = JSON.parse(lang)
+    let language = { lang }
     
-    const item = {en, pt, es}[language.value]
+    const item = {en, pt, es}[language.lang]
 
-    selectLanguage(item.languages.find(l => l.value === language.value))
+    selectLanguage(item.languages.find(l => l.value === language.lang))
 
     setData(item)
 
@@ -21,7 +21,7 @@ const TemplateBase = ({ children, showLang }) => {
   }, [showLang]);
 
   useEffect(() => {
-    const lang = localStorage.getItem('lang') || {label:"Inglês", value:"en"};
+    const lang = localStorage.getItem('lang') || "en";
     
     getLang(lang);
   }, [getLang]);
