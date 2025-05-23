@@ -43,23 +43,7 @@
       }
 
       &-image {
-        position: absolute;
-        left: 0px;
-        bottom: 0;
-        img {
-          width: 100px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 550px) {
-  .presentation {
-    &__content {
-      
-      &-image {
-       display: none;
+        display: none;
       }
     }
   }

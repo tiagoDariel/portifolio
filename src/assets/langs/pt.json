@@ -2,22 +2,44 @@
     "header": {
         "menu": [
             {
-                "text": "Início",
-                "link": "/"
+                "text": "Sobre",
+                "link": "#about"
             },
             {
-                "text": "Sobre",
-                "link": "/"
+                "text": "Projetos",
+                "link": "#projects"
+            },
+            {
+                "text": "Experiêcia",
+                "link": "#experience"
             },
             {
                 "text": "Contato",
-                "link": "/"
+                "link": "#contact"
+            },
+            {
+                "text": "Habilidades",
+                "link": "#skills"
             }
         ]
     },
+    "languages": [
+        {
+            "label": "Português",
+            "value": "pt"
+        },
+        {
+            "label": "Inglês",
+            "value": "en"
+        },
+        {
+            "label": "Espanhol",
+            "value": "es"
+        }
+    ],
     "presentation": {
         "title": "Olá, sou Tiago Dariel",
-        "subtitle": "Desenvolvedor full-stack especializado em sistemas back-end e front-end"
+        "subtitle": "Desenvolvedor especializado em sistemas front-end e entrando no desafio de full-stack"
     },
     "about": {
         "title": "Sobre mim",
@@ -74,7 +96,7 @@
                 "date_start": "2024-04-01",
                 "date_end": null,
                 "period": "Abr 2024 – Atualmente · 1 mês",
-                "location": "Goiânia, Goiás, Brasil · Híbrido",
+                "location": "Goiânia, Goiás, Brasil",
                 "description": "Criação de interfaces modernas e responsivas focadas na experiência do usuário. Atuação em projetos com Vue.js 3 e bibliotecas como Bootstrap, jQuery e Material UI. Transformação de protótipos do Figma em aplicações funcionais, integração com APIs REST e trabalho colaborativo em times ágeis. Comprometido com boas práticas de desenvolvimento, performance e usabilidade."
             },
             {
@@ -83,7 +105,7 @@
                 "date_start": "2021-06-01",
                 "date_end": "2024-04-01",
                 "period": "Jun 2021 – Abr 2024 · 2 anos 10 meses",
-                "location": "Aparecida de Goiânia, Goiás, Brasil · Presencial",
+                "location": "Aparecida de Goiânia, Goiás, Brasil",
                 "description": "Criação de interfaces modernas e responsivas com foco em uma ótima experiência do usuário. Atuação em projetos com Vue.js 2 e bibliotecas como Bootstrap e jQuery. Transformação de protótipos do Figma em aplicações funcionais, integração com APIs REST e colaboração em times ágeis. Foco em código limpo, performance e usabilidade."
             }
         ]

@@ -5,27 +5,30 @@ import es from '../../assets/langs/es.json'
 import { useCallback, useEffect, useState } from "react";
 
 const TemplateBase = ({ children, showLang }) => {
-  const [language, setLanguage] = useState(null)
+  const [languageSelected, selectLanguage] = useState(null)
+  const [data, setData] = useState({})
 
   const getLang = useCallback((lang) => {
-    const langNormalized = (lang || '').toLowerCase();
+    const language = JSON.parse(lang)
+    
+    const item = {en, pt, es}[language.value]
 
-    const item = langNormalized === 'inglês' ? en : langNormalized === 'espanhol' ? es : pt
+    selectLanguage(item.languages.find(l => l.value === language.value))
+
+    setData(item)
 
     showLang(item);
   }, [showLang]);
 
   useEffect(() => {
-    const lang = localStorage.getItem('lang') || 'Inglês';
-
-    setLanguage(lang);
-
+    const lang = localStorage.getItem('lang') || {label:"Inglês", value:"en"};
+    
     getLang(lang);
   }, [getLang]);
 
   return (
     <>
-      <Header getLang={getLang} optionLanguageSelected={language} />
+      <Header getLang={getLang} optionLanguageSelected={languageSelected} data={data}/>
       <main className="main-content container">
         {children}
       </main>

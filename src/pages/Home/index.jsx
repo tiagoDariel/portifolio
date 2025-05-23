@@ -1,4 +1,4 @@
-import { Presentation, Skills, Projects, Experience, About } from "../../components";
+import { Presentation, Skills, Projects, Experience, About, Contact } from "../../components";
 import { TemplateBase } from "../../templates";
 import { useState } from "react";
 
@@ -18,7 +18,7 @@ const Home = () => {
 				<Projects data={data.projects}/>
 				<Experience data={data.experience} />
 				<Skills data={data.skills}/>
-				{/* <Contact /> */}
+				<Contact />
 			</>
 			: <></>	}
 		</TemplateBase>

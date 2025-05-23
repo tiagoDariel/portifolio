@@ -1,7 +1,7 @@
 .header {
     display: flex;
     align-items: center;
-    background-color: var(--background-default);
+    background-color: var(--background-secundary);
     border-bottom: 1px solid var(--color-border);
     position: sticky;
     padding: 60px 20px 20px !important;
@@ -27,53 +27,6 @@
             border-radius: 4px;
             width: 150px;
         }
-
-        .night-light {
-            position: absolute;
-            height: 70px;
-            overflow: hidden;
-            width: 160px;
-            cursor: pointer;
-            right: 0;
-            box-shadow: 1px 1px 10px var(--background-default) inset;
-
-            .swap-time {
-                width: 450px;
-                background-color: red;
-                right: 100px;
-                position: absolute;
-                left: 0;
-                left: -135px;
-
-                .clounds {
-                    top: 0;
-                    height: 55px;
-                    transition: margin-right, 1s;
-                    top: 0;
-                    position: absolute;
-                }
-
-                .moon-sun {
-                    margin-left: 25%;
-                    height: 55px;
-                    transition: margin-left, 1s;
-                    position: absolute;
-                }
-
-                .light-clound {
-                    margin-left: -5%;
-                }
-
-                .dark {
-                    margin-left: -30%;
-                    height: 55px;
-
-                    &-clound {
-                        margin-left: 30%;
-                    }
-                }
-            }
-        }
     }
 
     &-content {
@@ -86,6 +39,10 @@
         .button-open-side-bar {
             display: none;
             cursor: pointer;
+            background-color: transparent;
+            color: var(--color-primary);
+            border: none;
+            font-size: 20px;
         }
     }
 
@@ -138,6 +95,12 @@
     
         .options {
             display: none;
+        }
+
+        &-logo {
+            img {
+               width: 130px;
+            }
         }
     }
 }

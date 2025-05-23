@@ -47,3 +47,32 @@
     }
   }
 }
+
+@media (max-width: 760px) {
+  .experience {
+    &__content {
+      display: block;
+
+      .info { 
+        width: 100%;
+        margin-bottom: 10px;
+
+        &-busines,
+        &-time,
+        &-location {
+          padding-left: 10px;
+        }
+      }
+
+      &-history {
+        padding-left: 10px;
+        width: 100%;
+
+        &:after,
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,44 +1,99 @@
 .side-menu {
-    background-color: transparent;
-    width: 100%;
-    position: fixed;
-    left: -100%;
-    top: 0;
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  height: 100%;
+  z-index: 200;
+  transition: left 0.5s ease 0s, background-color 0s ease 0s;
+  display: flex;
+
+
+  &__body {
     height: 100%;
-    z-index: 200;
-    transition: left 0.5s ease 0s, background-color 0s ease 0s;
-    display: flex;
+    width: 80%;
+    background-color: var(--background-secundary);
+    position: relative;
 
+    &-header {
+      width: 90%;
+      height: 70px;
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
 
-    &__content {
-        height: 100%;
-        width: 80%;
-        background-color: var(--background-primary);
+      &-toggle-theme {
         position: relative;
+        width: 160px;
+        height: 70px;
+      }
 
-        .close {
-            position: absolute;
-            right: 0;
-            top: 0;
-            font-size: 20px;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            color: var(--color-primary);
+      select {
+        height: 30px;
+        padding: 0 10px;
+        border-radius: 4px;
+        width: 100%;
+        grid-column: 1 / span 2;
+      }
+
+      .close {
+        right: 0;
+        top: 0;
+        font-size: 20px;
+        padding: 5px 10px 20px 15px;
+
+        cursor: pointer;
+        color: var(--color-primary);
+      }
+    }
+
+    &-content {
+      margin-top: 60px;
+
+      &-list {
+        ul {
+          padding-inline-start: 0;
+
+          li {
+            list-style: none;
+
+            &:hover {
+              background: var(--color-hover);
+            }
+
+            a {
+              text-decoration: none;
+              color: var(--color-text);
+              font-size: 16px;
+              font-weight: 600;
+              width: 90%;
+              display: block;
+              padding: 10px 0 10px 40px;
+
+            }
+
+          }
         }
+      }
     }
 
-    &__area-close {
-        width: 20%;
-        height: 100%;
+    &-image {
+      position: absolute;
+      bottom: 0;
     }
+  }
+
+  &__area-close {
+    width: 20%;
+    height: 100%;
+  }
 }
 
 .side-menu.open {
-    left: 0 !important;
-    background-color: rgba(31, 27, 27, 0.24);
-    transition: left .5s, background-color .5s ease .4s;
+  left: 0 !important;
+  background-color: rgba(31, 27, 27, 0.24);
+  transition: left .5s, background-color .5s ease .4s;
 }

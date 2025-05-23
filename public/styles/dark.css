@@ -6,7 +6,8 @@
     --background-default: #323232;
     --color-text: #c8c8c8;
     --color-secondary: #c9c0c0;
-    --color-border: #848484
+    --color-border: #848484;
+    --color-hover: #4444446b;
 }
 
 .light {

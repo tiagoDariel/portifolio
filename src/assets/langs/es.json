@@ -1,36 +1,34 @@
 {
   "header": {
     "menu": [
-      {
-        "text": "Inicio",
-        "link": "/"
-      },
-      {
-        "text": "Sobre mí",
-        "link": "/"
-      },
-      {
-        "text": "Contacto",
-        "link": "/"
-      }
+      { "text": "Sobre mí", "link": "#about" },
+      { "text": "Proyectos", "link": "#projects" },
+      { "text": "Experiencia", "link": "#experience" },
+      { "text": "Contacto", "link": "#contact" },
+      { "text": "Habilidades", "link": "#skills" }
     ]
   },
+  "languages": [
+    { "label": "Portugués", "value": "pt" },
+    { "label": "Inglés", "value": "en" },
+    { "label": "Español", "value": "es" }
+  ],
   "presentation": {
     "title": "Hola, soy Tiago Dariel",
-    "subtitle": "Desarrollador full-stack especializado en sistemas back-end y front-end"
+    "subtitle": "Desarrollador full-stack especializado en sistemas front-end y que asume el desafío full-stack"
   },
   "about": {
     "title": "Sobre mí",
-    "description": "Soy desarrollador front-end con más de 4 años de experiencia, trabajando principalmente con Vue.js, React y frameworks como Bootstrap, Material UI y Element Plus. Pasé 3 años en Facilita, donde ayudé a construir y mantener sistemas web utilizando Laravel y Blade. Actualmente, trabajo en Cilia, desarrollando interfaces modernas y componentes reutilizables con Vue.js. Tengo un interés creciente en el desarrollo back-end, especialmente con Node.js y Laravel, con el objetivo de convertirme en un desarrollador full-stack. Tengo un título en Análisis y Desarrollo de Sistemas por UniFanap, he completado un posgrado en Gestión de Proyectos y actualmente estudio Ingeniería de Software en el Instituto DNC para fortalecer aún más mis conocimientos técnicos."
+    "description": "Soy desarrollador front-end con más de 4 años de experiencia, trabajando principalmente con Vue.js, React y frameworks como Bootstrap, Material UI y Element Plus. Pasé 3 años en Facilita, donde ayudé a construir y mantener sistemas web usando Laravel y Blade. Actualmente trabajo en Cilia, desarrollando interfaces modernas y componentes reutilizables con Vue.js. Tengo un interés creciente en el desarrollo back-end, especialmente con Node.js y Laravel, con el objetivo de convertirme en desarrollador full-stack. Soy graduado en Análisis y Desarrollo de Sistemas por UniFanap, con posgrado en Gestión de Proyectos y actualmente estudio Ingeniería de Software en el Instituto DNC para mejorar aún más mis habilidades técnicas."
   },
   "projects": {
     "title": "Proyectos",
-    "subtitle": "Aquí hay algunos de mis proyectos:",
+    "subtitle": "Aquí están algunos de mis proyectos:",
     "items": [
       {
         "logo": "jk",
         "title": "Sistema Solar JK",
-        "subtitle": "Proyecto creado en WordPress",
+        "subtitle": "Proyecto creado con WordPress",
         "link": "https://jksolarsystem.com.br/",
         "gitHub": null,
         "image": null,
@@ -38,8 +36,8 @@
       },
       {
         "logo": "",
-        "title": "Formulario de Proyecto de Curso",
-        "subtitle": "Proyecto para desarrollar habilidades relacionadas con formularios",
+        "title": "Formulario de proyecto del curso",
+        "subtitle": "Proyecto para desarrollar habilidades de formulario",
         "link": "https://tiago-dariel-dnc.netlify.app/",
         "gitHub": "https://github.com/tiagoDariel/RID218815_Desafio01",
         "image": "projeto1",
@@ -47,8 +45,8 @@
       },
       {
         "logo": "",
-        "title": "Formulario de Proyecto de Curso",
-        "subtitle": "Proyecto para desarrollar habilidades relacionadas con formularios",
+        "title": "Formulario de proyecto del curso",
+        "subtitle": "Proyecto para desarrollar habilidades de formulario",
         "link": "https://tiago-dariel-desafio2.netlify.app/",
         "gitHub": "https://github.com/tiagoDariel/RID218815_Desafio02",
         "image": "projeto2",
@@ -62,12 +60,12 @@
     "items": [
       {
         "title": "Desarrollador Front-end",
-        "busines": "Cilia Tecnología - Tiempo completo",
+        "busines": "Cilia Tecnologia - Tiempo completo",
         "date_start": "2024-04-01",
         "date_end": null,
-        "period": "Abr 2024 – Presente · 1 mes",
-        "location": "Goiânia, Goiás, Brasil · Híbrido",
-        "description": "Desarrollando interfaces modernas y responsivas enfocadas en la experiencia del usuario. Trabajando en proyectos con Vue.js 3 y bibliotecas como Bootstrap, jQuery y Material UI. Transformando prototipos de Figma en aplicaciones funcionales, integrando APIs REST y colaborando en equipos ágiles. Comprometido con las mejores prácticas de desarrollo, el rendimiento y la usabilidad."
+        "period": "Abr 2024 – Actualidad · 1 mes",
+        "location": "Goiânia, Goiás, Brasil",
+        "description": "Creación de interfaces modernas y responsivas centradas en la experiencia del usuario. Participación en proyectos con Vue.js 3 y bibliotecas como Bootstrap, jQuery y Material UI. Transformación de prototipos de Figma en aplicaciones funcionales, integración con APIs REST y trabajo colaborativo en equipos ágiles. Comprometido con buenas prácticas de desarrollo, rendimiento y usabilidad."
       },
       {
         "title": "Desarrollador Front-end",
@@ -75,78 +73,30 @@
         "date_start": "2021-06-01",
         "date_end": "2024-04-01",
         "period": "Jun 2021 – Abr 2024 · 2 años 10 meses",
-        "location": "Aparecida de Goiânia, Goiás, Brasil · Presencial",
-        "description": "Desarrollé interfaces modernas y responsivas enfocadas en ofrecer una excelente experiencia al usuario. Trabajé en proyectos con Vue.js 2 y bibliotecas como Bootstrap y jQuery. Convertí prototipos de Figma en aplicaciones funcionales, integré APIs REST y colaboré en equipos ágiles. Enfocado en código limpio, rendimiento y usabilidad."
+        "location": "Aparecida de Goiânia, Goiás, Brasil",
+        "description": "Creación de interfaces modernas y responsivas enfocadas en una excelente experiencia del usuario. Participación en proyectos con Vue.js 2 y bibliotecas como Bootstrap y jQuery. Transformación de prototipos de Figma en aplicaciones funcionales, integración con APIs REST y colaboración en equipos ágiles. Enfocado en código limpio, rendimiento y usabilidad."
       }
     ]
   },
   "skills": {
     "title": "Habilidades",
     "items": [
-      {
-        "name": "vue",
-        "link": "https://vuejs.org/"
-      },
-      {
-        "name": "react",
-        "link": "https://reactjs.org/"
-      },
-      {
-        "name": "angular",
-        "link": "https://angular.io/"
-      },
-      {
-        "name": "node",
-        "link": "https://nodejs.org/"
-      },
-      {
-        "name": "laravel",
-        "link": "https://laravel.com/"
-      },
-      {
-        "name": "flutter",
-        "link": "https://flutter.dev/"
-      },
-      {
-        "name": "Sass",
-        "link": "https://sass-lang.com/"
-      },
-      {
-        "name": "wordpress",
-        "link": "https://wordpress.org/"
-      },
-      {
-        "name": "stylus",
-        "link": "https://stylus-lang.com/"
-      },
-      {
-        "name": "php",
-        "link": "https://www.php.net/"
-      },
-      {
-        "name": "mysql",
-        "link": "https://www.mysql.com/"
-      },
-      {
-        "name": "sql",
-        "link": "https://es.wikipedia.org/wiki/SQL"
-      },
-      {
-        "name": "github",
-        "link": "https://github.com/"
-      },
-      {
-        "name": "jquery",
-        "link": "https://jquery.com/"
-      },
-      {
-        "name": "docker",
-        "link": "https://www.docker.com/"
-      },
-      {
-        "name": "bootstrap",
-        "link": "https://getbootstrap.com/"
-      }
+      { "name": "vue", "link": "https://vuejs.org/" },
+      { "name": "react", "link": "https://reactjs.org/" },
+      { "name": "angular", "link": "https://angular.io/" },
+      { "name": "node", "link": "https://nodejs.org/" },
+      { "name": "laravel", "link": "https://laravel.com/" },
+      { "name": "flutter", "link": "https://flutter.dev/" },
+      { "name": "Sass", "link": "https://sass-lang.com/" },
+      { "name": "wordpress", "link": "https://wordpress.org/" },
+      { "name": "stylus", "link": "https://stylus-lang.com/" },
+      { "name": "php", "link": "https://www.php.net/" },
+      { "name": "mysql", "link": "https://www.mysql.com/" },
+      { "name": "sql", "link": "https://es.wikipedia.org/wiki/SQL" },
+      { "name": "github", "link": "https://github.com/" },
+      { "name": "jquery", "link": "https://jquery.com/" },
+      { "name": "docker", "link": "https://www.docker.com/" },
+      { "name": "bootstrap", "link": "https://getbootstrap.com/" }
     ]
   }
 }
