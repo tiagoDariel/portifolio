@@ -1,17 +1,41 @@
 {
   "header": {
     "menu": [
-      { "text": "About", "link": "#about" },
-      { "text": "Projects", "link": "#projects" },
-      { "text": "Experience", "link": "#experience" },
-      { "text": "Contact", "link": "#contact" },
-      { "text": "Skills", "link": "#skills" }
+      {
+        "text": "About",
+        "link": "#about"
+      },
+      {
+        "text": "Projects",
+        "link": "#projects"
+      },
+      {
+        "text": "Experience",
+        "link": "#experience"
+      },
+      {
+        "text": "Contact",
+        "link": "#contact"
+      },
+      {
+        "text": "Skills",
+        "link": "#skills"
+      }
     ]
   },
   "languages": [
-    { "label": "Portuguese", "value": "pt" },
-    { "label": "English", "value": "en" },
-    { "label": "Spanish", "value": "es" }
+    {
+      "label": "Portuguese",
+      "value": "pt"
+    },
+    {
+      "label": "English",
+      "value": "en"
+    },
+    {
+      "label": "Spanish",
+      "value": "es"
+    }
   ],
   "presentation": {
     "title": "Hi, I'm Tiago Dariel",
@@ -41,7 +65,11 @@
         "link": "https://tiago-dariel-dnc.netlify.app/",
         "gitHub": "https://github.com/tiagoDariel/RID218815_Desafio01",
         "image": "projeto1",
-        "percents": [38, 19, 43]
+        "percents": [
+          38,
+          19,
+          43
+        ]
       },
       {
         "logo": "",
@@ -50,7 +78,11 @@
         "link": "https://tiago-dariel-desafio2.netlify.app/",
         "gitHub": "https://github.com/tiagoDariel/RID218815_Desafio02",
         "image": "projeto2",
-        "percents": [15, 47, 38]
+        "percents": [
+          15,
+          47,
+          38
+        ]
       }
     ]
   },
@@ -81,22 +113,73 @@
   "skills": {
     "title": "Skills",
     "items": [
-      { "name": "vue", "link": "https://vuejs.org/" },
-      { "name": "react", "link": "https://reactjs.org/" },
-      { "name": "angular", "link": "https://angular.io/" },
-      { "name": "node", "link": "https://nodejs.org/" },
-      { "name": "laravel", "link": "https://laravel.com/" },
-      { "name": "flutter", "link": "https://flutter.dev/" },
-      { "name": "Sass", "link": "https://sass-lang.com/" },
-      { "name": "wordpress", "link": "https://wordpress.org/" },
-      { "name": "stylus", "link": "https://stylus-lang.com/" },
-      { "name": "php", "link": "https://www.php.net/" },
-      { "name": "mysql", "link": "https://www.mysql.com/" },
-      { "name": "sql", "link": "https://en.wikipedia.org/wiki/SQL" },
-      { "name": "github", "link": "https://github.com/" },
-      { "name": "jquery", "link": "https://jquery.com/" },
-      { "name": "docker", "link": "https://www.docker.com/" },
-      { "name": "bootstrap", "link": "https://getbootstrap.com/" }
+      {
+        "name": "vue",
+        "link": "https://vuejs.org/"
+      },
+      {
+        "name": "react",
+        "link": "https://reactjs.org/"
+      },
+      {
+        "name": "angular",
+        "link": "https://angular.io/"
+      },
+      {
+        "name": "node",
+        "link": "https://nodejs.org/"
+      },
+      {
+        "name": "laravel",
+        "link": "https://laravel.com/"
+      },
+      {
+        "name": "flutter",
+        "link": "https://flutter.dev/"
+      },
+      {
+        "name": "Sass",
+        "link": "https://sass-lang.com/"
+      },
+      {
+        "name": "wordpress",
+        "link": "https://wordpress.org/"
+      },
+      {
+        "name": "stylus",
+        "link": "https://stylus-lang.com/"
+      },
+      {
+        "name": "php",
+        "link": "https://www.php.net/"
+      },
+      {
+        "name": "mysql",
+        "link": "https://www.mysql.com/"
+      },
+      {
+        "name": "sql",
+        "link": "https://en.wikipedia.org/wiki/SQL"
+      },
+      {
+        "name": "github",
+        "link": "https://github.com/"
+      },
+      {
+        "name": "jquery",
+        "link": "https://jquery.com/"
+      },
+      {
+        "name": "docker",
+        "link": "https://www.docker.com/"
+      },
+      {
+        "name": "bootstrap",
+        "link": "https://getbootstrap.com/"
+      }
     ]
+  },
+  "contacts": {
+    "title": "My contact"
   }
 }

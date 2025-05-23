@@ -1,0 +1,20 @@
+.contact {
+  background-color: var(--background-primary);
+
+  .contacts {
+    &__info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 3px 20px;
+      text-decoration: none;
+
+      a {
+        text-decoration: none;
+        color: var(--color-secondary);
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

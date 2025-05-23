@@ -17,8 +17,8 @@ const Home = () => {
 				<About  data={data.about}/>
 				<Projects data={data.projects}/>
 				<Experience data={data.experience} />
+				<Contact title={data.contacts.title}/>
 				<Skills data={data.skills}/>
-				<Contact />
 			</>
 			: <></>	}
 		</TemplateBase>
